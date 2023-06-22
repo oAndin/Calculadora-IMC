@@ -1,9 +1,9 @@
 console.log("Hello World!");
 let resposta = document.querySelector(".resposta");
 btn.onclick = function () {
-    let altura = altura.value;
-    let peso = peso.value;
-    let calculo = (altura * altura) / peso ; 
+    let al = altura.value;
+    let pe = peso.value;
+    let calculo = pe / (al * al); 
     resposta.innerText = `Seu IMC é: ${calculo.toFixed(1)}`;
 
     if (calculo <= 18.4) {resposta.innerText += ` Abaixo do peso`
